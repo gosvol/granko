@@ -1,0 +1,14 @@
+
+/* Navigation Bar */
+
+.navbar-brand {
+  font-size: 2.5 rem;
+  font-weight: bold;
+}
+
+/* Title Section */
+
+#title .container-fluid {
+  padding: 1% 3% 1%;
+}
+

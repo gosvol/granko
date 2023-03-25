@@ -1,0 +1,27 @@
+{% extends 'main/base.html'%}
+{%block title%}
+Наші контакти
+{%endblock%}
+{%block content%}
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="bs-component">
+                <h1 >Контакти</h1>
+                <h2>Адреса:</h2>
+                <p class="lead">Україна, Житомирська обл., м. Коростишів<br />
+                тел.: +38 (067)185-54-11 <br />
+                e-mail: gosvol@ukr.net<br />
+                Режим роботи:<br />
+                Пн-Сб: с 9-00 до 18-00<br />
+                <h2>Розташування</h2>
+                <p class="lead">Є можливість відправити вантаж Новою Поштою, Делівері, де можна відстежити вантаж за
+                    номером декларації на сайті. Вартість доставки залежить від ваги, відстані доставки товару та тарифу перевізника.</p>
+            </div>
+        </div>
+    </div>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Головна</a></li>
+  <li class="breadcrumb-item active">Контакти</li>
+</ol>
+
+{%endblock%}

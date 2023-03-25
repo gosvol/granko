@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="uk-UA" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="keywords" content="пам'ятники із граніту, Коростишів, виготовлення пам'ятників із граніту,
+	гранітні надгробки." />
+	<meta name="rights" content="Granko" />
+	<meta name="author" content="Granko" />
+    <meta name="description"
+        content="Пам'ятники з граніту, габро, виготовлення та продаж пам'ятників з натурального каменю оптом та в
+        роздріб м. Коростишів тел. 0671855411">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#db5945">
+  <link rel="stylesheet" href="static/assets/css/styles.css">
+  <title>{% block title %}{%endblock%}</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX6VP7G6V6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XX6VP7G6V6');
+    </script>
+</head>
+<body>
+<section id="title">
+  <div class="container-fluid">
+        <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">GRANKO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contacts' %}">Контакти</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'catalog' %}">Каталог пам'ятників</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'construction' %}">Граніт на будівництві</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'price' %}">Оптовий прайс</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'types' %}">Види граніту</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+<div class="container">
+    {% block content %}{%endblock%}
+</div>
+<div class="container">
+<a href="#top">Повернутись на верх</a>
+</div>
+  <!--Footer-->
+<section id="footer">
+  <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <p>&copy; 2023 granko.com.ua </p>
+      </nav>
+  </div>
+</section>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
